@@ -2,6 +2,9 @@
 # PYTHON:
 Python is a high level programming language which is easy to understand by its code. It is widely used by software developers, programmers, etc. The language is named after the BBC show “Monty Python’s Flying Circus” and has nothing to do with reptiles. Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer. On the other hand, Python also offers much more error checking than C, and, being a very-high-level language, it has high-level data types built in, such as flexible arrays and dictionaries. Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages. Python allows you to split your program into modules that can be reused in other Python programs. It comes with a large collection of standard modules that you can use as the basis of your programs — or as examples to start learning to program in Python. Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk. Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary. The interpreter can be used interactively, which makes it easy to experiment with features of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator. Python enables programs to be written compactly and readably. Programs written in Python are typically much shorter than equivalent C, C++, or Java programs, for several reasons: 1. the high-level data types allow you to express complex operations in a single statement; 2. statement grouping is done by indentation instead of beginning and ending brackets; 3. no variable or argument declarations are necessary. Python is extensible!!
 
+###### Encoding is the process of putting a sequence of character s (letters, numbers, punctuation, and certain symbols) into a specialized format for efficient transmission or storage. Decoding is the opposite process -- the conversion of an encoded format back into the original sequence of characters.
+###### UTF-8 can represent any character in the Unicode standard. UTF-8 is backwards compatible with ASCII. By default, Python source files are treated as encoded in UTF-8. 
+
 ## 1. An Informal Introduction to Python
 1. Using Python as a Calculator  
   1.1. Numbers 
@@ -13,7 +16,7 @@ Python is a high level programming language which is easy to understand by its c
 1. a/b  # classic division returns a float
 2. a//b  # floor division discards the fractional part
 3. a%b  # the % operator returns the remainder of the division
-4. a** b  # a to the power of b
+4. a** b  # a powered b
 5. Python supports numbers of type int, float, Decimal and Fraction
 6. Has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (a+bj).
 7. 'doesn\'t'  # use \' to escape the single quote..."doesn't"
@@ -22,7 +25,13 @@ Python is a high level programming language which is easy to understand by its c
 10. s[:i] + s[i:] is always equal to s:
 11. The while loop executes as long as the condition remains true.
 12. The keyword argument end can be used to avoid the newline after the output
-
+13. In interactive mode, the last printed expression is assigned to the variable _. This means that when you are using Python as a desk calculator, it is somewhat easier to continue calculations 
+14. Python also has built-in support for complex numbers, and uses the j or J suffix to indicate the imaginary part (e.g. 3+5j).
+15. String literals can span multiple lines. One way is using triple-quotes: """...""" or '''...'''. End of lines are automatically included in the string, but it’s possible to prevent this by adding a \ at the end of the line.
+16. Strings can be concatenated (glued together) with the + operator, and repeated with *:
+17. Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated. >>> 'Py' 'thon' --> 'Python'. This only works with two literals though, not with variables or expressions.
+18. If you want to concatenate variables or a variable and a literal, use +.
+19. 
 
 ## 2. More Control Flow Tools
 1. if Statements
