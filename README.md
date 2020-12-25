@@ -31,7 +31,12 @@ Python is a high level programming language which is easy to understand by its c
 16. Strings can be concatenated (glued together) with the + operator, and repeated with *:
 17. Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated. >>> 'Py' 'thon' --> 'Python'. This only works with two literals though, not with variables or expressions.
 18. If you want to concatenate variables or a variable and a literal, use +.
-19. 
+19. Python strings cannot be changed — they are immutable. Therefore, assigning to an indexed position in the string results in an error: 'str' object does not support item assignment.
+20. The built-in function len() returns the length of a string.
+21. Lists might contain items of different types, but usually the items all have the same type.
+22. Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content.
+23. You can also add new items at the end of the list, by using the append() method.
+24. It is possible to nest lists (create lists containing other lists).
 
 ## 2. More Control Flow Tools
 1. if Statements
